@@ -30,11 +30,13 @@ The Missouri Headwaters (MHW) HUC6 watershed was chosen as the study region. Thi
 
 #### 2.3: Training Datasets
 
+
 | Dataset | Access |
-| --- | --- |
+| ---- | ---- |
 | BCQC SNOTEL daily dataset | [PNNL website](https://www.pnnl.gov/projects/distributed-hydrology-soil-vegetation-model/data-products) |
 | SRTM Digital Elevation Model | Earth Access API |
 | PRISM gridded historical climate data | [PRISM Climate Group API](https://prism.oregonstate.edu/downloads/) |
+
 
 Data used in the ML model are indicated in the table above. SNOTEL data provided the target variable (SWE). PRISM data provided climate data used as predictor variables. The PRISM dataset is an interpolated dataset that excels at capturing weather patterns in complex mountainous terrain (Daly et al. 2008), and is freely available at 4km resolution; given the aims of this study, PRISM was the ideal option to provide climate data. Climate data included daily minimum temperature, maximum temperature, and precipitation; rolling windows of weather patterns as well as temporal variables were engineered from the PRISM data. A SRTM digital elevation model (DEM) was used to provide topographic data to the model, supplementing the PRISM data. DEM data included elevation, slope, and aspect; the DEM (30 arcsecond resolution) was upscaled to match the PRISM data (4km resolution). Upscaling methodology was guided by Grohmann 2015: aspect and slope were calculated at native resolution, and then upscaled to the 4km grid. Further, given that aspect is a continuous variable that the ML algorithm can't parse, aspect was converted to aspect northness and eastness.
 
@@ -81,7 +83,7 @@ An annual view of maximum SWE in the entire watershed reveals further findings. 
 | --- | --- |
 | Average Bias | 2.072mm |
 | RMSE | 116.297mm |
-| $R^2$ | 0.735 |
+| R<sup>2</sup> | 0.735 |
 
 Preliminary statistics on model performance suggest decent reliability, though scores could be improved. Average bias across the entire dataset (comparing observed and predicted SWE at each station and timestep) is quite low, at 2.072 mm. $R^2$ is 0.735, meaning the model explains about three-fourths of the variance. While this statistic could certainly be improved, this is a strong starting point. For comparison, Ouyang et al. 2026 attained a higher $R^2$ score with Random Forests, but this study's model ranks higher than some of Ouyang et al. 2026's models on $R^2$.
 
