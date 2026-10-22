@@ -29,6 +29,7 @@ One challenge of utilizing ML to model SWE is algorithm selection. Hybrid models
 The Missouri Headwaters (MHW) HUC6 watershed was chosen as the study region. This watershed captures numerous mountain ranges and contains 28 SNOTEL stations, providing a wealth of data to use for the model.
 
 #### 2.3: Training Datasets
+
 | Dataset | Access |
 | --- | --- |
 | BCQC SNOTEL daily dataset | [PNNL website](https://www.pnnl.gov/projects/distributed-hydrology-soil-vegetation-model/data-products) |
