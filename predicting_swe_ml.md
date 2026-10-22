@@ -85,7 +85,7 @@ An annual view of maximum SWE in the entire watershed reveals further findings. 
 | RMSE | 116.297mm |
 | R<sup>2</sup> | 0.735 |
 
-Preliminary statistics on model performance suggest decent reliability, though scores could be improved. Average bias across the entire dataset (comparing observed and predicted SWE at each station and timestep) is quite low, at 2.072 mm. $R^2$ is 0.735, meaning the model explains about three-fourths of the variance. While this statistic could certainly be improved, this is a strong starting point. For comparison, Ouyang et al. 2026 attained a higher $R^2$ score with Random Forests, but this study's model ranks higher than some of Ouyang et al. 2026's models on $R^2$.
+Preliminary statistics on model performance suggest decent reliability, though scores could be improved. Average bias across the entire dataset (comparing observed and predicted SWE at each station and timestep) is quite low, at 2.072 mm. R<sup>2</sup> is 0.735, meaning the model explains about three-fourths of the variance. While this statistic could certainly be improved, this is a strong starting point. For comparison, Ouyang et al. 2026 attained a higher R<sup>2</sup> score with Random Forests, but this study's model ranks higher than some of Ouyang et al. 2026's models on $R^2$.
 
 <embed type="text/html" src="./projects/predicting_swe_with_ml/annual_hydrograph_plot.html" height="600" width="800">
 
