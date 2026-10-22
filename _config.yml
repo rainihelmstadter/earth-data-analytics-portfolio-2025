@@ -3,4 +3,6 @@ logo: /img/Profile_Photo.jpg
 description: I'll be continuously updating this page throughout the Earth Data Analytics certificate program!
 theme: jekyll-theme-minimal
 color-scheme: auto
-markdown: GFM
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
